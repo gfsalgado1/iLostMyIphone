@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dK-FW-a5L">
+                                <rect key="frame" x="14" y="250" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your iphone is at: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbK-zC-kp2">
+                                <rect key="frame" x="144" y="199" width="104.5" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhM-yG-9n5">
+                                <rect key="frame" x="112" y="150" width="168" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="EAD-Hc-Qrt"/>
+                                </constraints>
+                                <state key="normal" title="Where is my PHONE?"/>
+                                <connections>
+                                    <action selector="swapword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Byu-Ux-uOi"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="This phone has been lost. Please call the owner to unlock and retirieve the phone. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N6z-Ol-nae">
+                                <rect key="frame" x="278" y="474" width="89" height="85"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="rJ9-Tc-Lbw"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphonemap.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="n4R-Wb-39x">
+                                <rect key="frame" x="-27" y="429" width="317" height="405"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="d2g-Wz-GFp">
+                                <rect key="frame" x="145" y="392" width="354" height="264"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9:32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6R-5P-VWl">
+                                <rect key="frame" x="298" y="445" width="36" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Call Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKn-Xd-c8w">
+                                <rect key="frame" x="282" y="554" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N6z-Ol-nae" secondAttribute="bottom" constant="191" id="5fv-ge-fbv"/>
+                            <constraint firstItem="6dK-FW-a5L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="9sC-UR-OBd"/>
+                            <constraint firstItem="NhM-yG-9n5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F9j-Ft-zFs"/>
+                            <constraint firstItem="NhM-yG-9n5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="HsV-vj-J8H"/>
+                            <constraint firstItem="NhM-yG-9n5" firstAttribute="centerX" secondItem="gbK-zC-kp2" secondAttribute="centerX" id="O25-C9-6QN"/>
+                            <constraint firstItem="6dK-FW-a5L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="250" id="PZ7-eh-SAN"/>
+                            <constraint firstItem="gbK-zC-kp2" firstAttribute="top" secondItem="NhM-yG-9n5" secondAttribute="bottom" constant="78" id="ZV3-Wg-249"/>
+                            <constraint firstItem="N6z-Ol-nae" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="fkN-go-1li"/>
+                            <constraint firstItem="gbK-zC-kp2" firstAttribute="centerX" secondItem="N6z-Ol-nae" secondAttribute="centerX" id="geW-Cb-UtI"/>
+                            <constraint firstItem="NhM-yG-9n5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="235" id="zuf-EL-IRY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answer" destination="gbK-zC-kp2" id="RRm-EF-XBM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-136.23188405797103" y="-60.267857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iphone.png" width="153.60000610351562" height="115.19999694824219"/>
+        <image name="iphonemap.jpg" width="300" height="533"/>
+    </resources>
+</document>
